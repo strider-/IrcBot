@@ -6,7 +6,7 @@ using HtmlAgilityPack;
 using System.Text.RegularExpressions;
 using IrcBot.Core;
 using IrcBot.Core.Bots;
-using IrcBot.Core.Core.Helpers;
+using IrcBot.Core.Helpers;
 using System.Net;
 using IrcBot.Bots.Model;
 using IrcBot.Bots.Data;

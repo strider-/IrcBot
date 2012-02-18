@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using IrcBot.Core.Core.Helpers;
+using IrcBot.Core.Helpers;
 
 namespace IrcBot.Core
 {
@@ -40,6 +40,8 @@ namespace IrcBot.Core
                 _nickname = usr[0];
                 _username = usr[1];
                 _hostname = usr[2];
+
+                InvolvesBotClient = InvolvesBotClient || _nickname.Equals(_conn.Host.NickName);
             }
         }
 

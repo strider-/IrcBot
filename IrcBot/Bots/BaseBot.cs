@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using IrcBot.Core.Bots;
-using IrcBot.Core.Core.Helpers;
+using IrcBot.Core.Helpers;
 
 namespace IrcBot.Core.Bots
 {

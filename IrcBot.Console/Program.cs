@@ -19,7 +19,7 @@ namespace IrcBot.Console
             var s = new { Server = "irc.choopa.net", Port = 9999, SSL = true };
 
             BotClient client = new BotClient(s.Server, s.Port, s.SSL);
-            client.SetIdentity("geno-", "n3rd", "Robot Strider");
+            client.SetIdentity("geno--", "n3rd", "Robot Strider");
             AddBots(client);
 
             client.Connect();
@@ -50,11 +50,14 @@ namespace IrcBot.Console
 
         static void AddBots(BotClient host)
         {
-            UrlBot urlBot = new UrlBot("#changoland");
+            UrlBot urlBot = new UrlBot("#geno-test");
             host.AddBot(urlBot);
 
             TweetBot tBot = new TweetBot();
             host.AddBot(tBot);
+
+            GenoFeedBot genoBot = new GenoFeedBot();
+            host.AddBot(genoBot);
         }
     }
 }

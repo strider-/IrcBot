@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ISession.cs" />
+    <Compile Include="GenoFeedBot.cs" />
     <Compile Include="Model\NoSqlEntity.cs" />
     <Compile Include="Data\RavenSession.cs" />
     <Compile Include="Model\Record.cs" />
